@@ -1,5 +1,5 @@
 .header {
-  background-color: #fff;
+  background-color: black;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
   position: fixed;
   width: 100%;
@@ -22,7 +22,7 @@
 }
 
 .header li a:hover {
-  background-color: #f4f4f4;
+  background-color: #303030;
 }
 
 .header .logo {
@@ -36,20 +36,21 @@
 .header .menu {
   clear: both;
   max-height: 0;
+  background-color: #212121;
   transition: max-height .2s ease-out;
 }
 
 .header .menu-icon {
   cursor: pointer;
   display: inline-block;
-  float: right;
+  float: left;
   padding: 28px 20px;
   position: relative;
   user-select: none;
 }
 
 .header .menu-icon .navicon {
-  background: #333;
+  background: red;
   display: block;
   height: 2px;
   position: relative;
@@ -59,7 +60,7 @@
 
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
-  background: #333;
+  background: white;
   content: '';
   display: block;
   height: 100%;
@@ -80,7 +81,7 @@
 }
 
 .header .menu-btn:checked ~ .menu {
-  max-height: 240px;
+  max-height: inherit;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
