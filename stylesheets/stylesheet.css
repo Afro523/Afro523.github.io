@@ -267,9 +267,8 @@ Full-Width Styles
 .inner {
   position: inherit;
   max-width: 640px;
-  
   padding-top: 13.5%;
-  margin: 0 auto;
+  margin: 0 10%;
   color: black;
 }
 
