@@ -1,0 +1,1 @@
+!function(){function e(e){e.addEventListener("click",function(e){e.preventDefault()})}for(var n=document.querySelectorAll(".c-hamburger"),t=n.length-1;t>=0;t--){var r=n[t];e(r)}}();
