@@ -326,7 +326,21 @@ Full-Width Styles
 
 .infoParagraph{
   font-family: 'Orbitron', 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
 
+.projectsHolder{
+  height: 50%;
+  width: 50%;
+}
+
+.projectPreview{
+  height: 50%;
+  width: 50%;
+}
+
+.previewImg{
+  height: 10%;
+  width: 10%;
 }
 
 /*******************************************************************************
