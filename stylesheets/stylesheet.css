@@ -149,9 +149,7 @@ strong {
 }
 
 img {
-  position: relative;
   margin: 0 auto;
-  max-width: 739px;
   padding: 5px;
   margin: 10px 0 10px 0;
   border: 1px solid #ebebeb;
@@ -275,6 +273,11 @@ form {
 Full-Width Styles
 *******************************************************************************/
 
+h3:hover{
+  color: red;
+  transition: .5s linear;
+}
+
 .outer {
   width: 100%;
 }
@@ -318,6 +321,7 @@ Full-Width Styles
 
 #footer_wrap {
   background: #212121;
+  text-align: left;
 }
 
 .menu {
@@ -328,19 +332,38 @@ Full-Width Styles
   font-family: 'Orbitron', 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-.projectsHolder{
-  height: 50%;
-  width: 50%;
+#projectCellsHolder{
+  height: 250px;
+  width: 100%;
+  padding: 2%;
+  display: none;
+  box-shadow: 10px 10px 5px 5px  #DFDFDF;
+  background-color: grey;
 }
 
-.projectPreview{
-  height: 50%;
-  width: 50%;
+.projectPreviewCell{
+  height: 100%;
+  width: 25%;
+  border: 5px solid black;
+  float: left;
+  margin: 1px;
+  background-color: white;
 }
-
+  .projectPreviewCell:hover {
+    border: 5px solid red;
+}
 .previewImg{
-  height: 10%;
-  width: 10%;
+  height: 50%;
+  width: 100%;
+  /*background: url("images/firstLevel01.png");*/
+  background: url("../minified/images/firstLevel01.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  float:left;
+}
+.previewText{
+  height: 50%;
+  float:left;
 }
 
 /*******************************************************************************

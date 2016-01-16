@@ -33,10 +33,15 @@
   <!-- MAIN CONTENT -->
   <div id="main_content_wrap" class="outer">
     <section id="main_content" class="inner">
-      <h3>Some Projects</h3>
-        <div class="projectsHolder">
-          <div class="projectPreview">
-            <img class="previewImg" src="minified/images/firstlevel01.png">
+      <h3 id="projectsHeader" onclick="expandToggle()">Some Projects</h3>
+        <div id="projectCellsHolder">
+          <div class="projectPreviewCell">
+            <p class="previewImg"></p>
+            <p class="previewText">A map I made in Unreal Development Kit</p>
+          </div>
+          <div class="projectPreviewCell">
+            <p class="previewImg"></p>
+            <p class="previewText">A map I made in Unreal Development Kit</p>
           </div>
         </div>
       <h3>About Me</h3>
@@ -58,7 +63,9 @@
     </footer>
   </div>
 </div>
-<script src="minified/main-min.js"></script>
+<!--<script src="minified/main-min.js"></script>-->
+    <script src="javascripts/main.js"></script>
   </body>
-  <link rel="stylesheet" type="text/css" media="screen" href="minified/stylesheet-min.css">
+  <!--<link rel="stylesheet" type="text/css" media="screen" href="minified/stylesheet-min.css">-->
+  <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css"
 </html>
