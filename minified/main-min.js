@@ -1,1 +1,1 @@
-function expandToggle(){var e=document.getElementById("projectCellsHolder");"block"==e.style.display?document.getElementById("projectCellsHolder").style.display="none":document.getElementById("projectCellsHolder").style.display="block"}
+function toggleController(r){var e=0;try{for(i=0;i<=arrayLength;i++)toggleArray[i].style.display="none",r==i&&(toggleArray[i].style.display="block",e=i)}catch(l){}}var toggleArray=document.querySelectorAll(".toggleable"),arrayLength=toggleArray.length;

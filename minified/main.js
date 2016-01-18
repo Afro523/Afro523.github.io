@@ -1,12 +1,21 @@
+var toggleArray = document.querySelectorAll(".toggleable");
+//var toggleArray = document.getElementsByClassName('toggleable');
+var arrayLength = toggleArray.length;
 
-  function expandToggle(){
-    var projectState = document.getElementById('projectCellsHolder');
-
-    if (projectState.style.display == 'block') {
-      //Hidden
-      document.getElementById('projectCellsHolder').style.display = 'none';
-    }else {
-      //Showing
-      document.getElementById('projectCellsHolder').style.display = 'block';
+//Just have to be sure to put the # of the header within the function call
+function toggleController(headerClicked){
+  var openedInt = 0;
+  //Turn everything Off
+  try {
+    for (i = 0; i <= arrayLength; i++){
+      toggleArray[i].style.display = "none";
+        if (headerClicked == i ) {
+          toggleArray[i].style.display = "block";
+          openedInt = i;
+        }
     }
+  } catch (e) {
+
+    }
+
   };
