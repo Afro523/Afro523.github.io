@@ -278,6 +278,10 @@ h3:hover{
   transition: .5s linear;
 }
 
+.toggable{
+  display = "";
+}
+
 .outer {
   width: 100%;
 }

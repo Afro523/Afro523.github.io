@@ -34,14 +34,14 @@
   <div id="main_content_wrap" class="outer">
     <section id="main_content" class="inner">
 
-      <h3>About Me</h3>
-        <p id="aboutParagraph"class="infoParagraph, toggleable">
+      <h3 onclick="toggleController(0)">About Me</h3>
+        <p id="aboutParagraph"class="toggleable, infoParagraph">
           Hi my name is Josh Resnick and I am a currently a computer science
           graduate at pace university.
         </p>
 
-      <h3 id="projectsHeader" class="toggleable" onclick="expandToggle()">Some Projects</h3>
-        <div id="projectCellsHolder">
+      <h3 id="projectsHeader" onclick="toggleController(1)">Some Projects</h3>
+        <div id="projectCellsHolder" class="toggleable">
           <div class="projectPreviewCell">
             <p class="previewImg"></p>
             <p class="previewText">A map I made in Unreal Development Kit</p>
