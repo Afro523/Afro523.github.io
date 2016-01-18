@@ -339,6 +339,7 @@ h3:hover{
   display: none;
   box-shadow: 10px 10px 5px 5px  #DFDFDF;
   background-color: grey;
+  padding-bottom: 5%;
 }
 
 .projectPreviewCell{
@@ -417,6 +418,36 @@ Small Device Styles
     min-width: 320px;
     max-width: 480px;
     font-size: 11px;
+  }
+
+  #projectCellsHolder{
+    height: 250px;
+    width: 100%;
+    padding-bottom: 5%;
+    display: none;
+    box-shadow: 10px 10px 5px 5px  #DFDFDF;
+    background-color: grey;
+  }
+
+  .projectPreviewCell{
+    height: 100%;
+    width: 25%;
+    border: 5px solid black;
+    float: left;
+    margin: 1px;
+    background-color: white;
+  }
+    .projectPreviewCell:hover {
+      border: 5px solid red;
+  }
+  .previewImg{
+    height: 50%;
+    width: 100%;
+    /*background: url("images/firstLevel01.png");*/
+    background: url("../minified/images/firstLevel01.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    float:left;
   }
 
 }

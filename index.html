@@ -33,7 +33,14 @@
   <!-- MAIN CONTENT -->
   <div id="main_content_wrap" class="outer">
     <section id="main_content" class="inner">
-      <h3 id="projectsHeader" onclick="expandToggle()">Some Projects</h3>
+
+      <h3>About Me</h3>
+        <p id="aboutParagraph"class="infoParagraph, toggleable">
+          Hi my name is Josh Resnick and I am a currently a computer science
+          graduate at pace university.
+        </p>
+
+      <h3 id="projectsHeader" class="toggleable" onclick="expandToggle()">Some Projects</h3>
         <div id="projectCellsHolder">
           <div class="projectPreviewCell">
             <p class="previewImg"></p>
@@ -44,9 +51,7 @@
             <p class="previewText">A map I made in Unreal Development Kit</p>
           </div>
         </div>
-      <h3>About Me</h3>
-        <p class="infoParagraph">Hi my name is Josh Resnick and I am a currently </p>
-      <h3>Resume</h3>
+      <h3 onclick="toggleController">Resume</h3>
         <p class="infoParagraph"></p>
       <h3>Curriculum Vitae</h3>
         <p class="infoParagraph"></p>
