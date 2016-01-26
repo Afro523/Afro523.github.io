@@ -274,7 +274,7 @@ Full-Width Styles
 *******************************************************************************/
 
 h3:hover{
-  color: red;
+  color: ;
   transition: .5s linear;
 }
 
@@ -349,15 +349,26 @@ h3:hover{
 .projectPreviewCell{
   height: 100%;
   width: 25%;
-  border: 5px solid black;
+  border: 1px solid black;
+  border-radius: 10px;
   float: left;
-  margin: 1px;
+  margin: 1%;
+  margin-left:2%;
   background-color: white;
 }
   .projectPreviewCell:hover {
-    border: 5px solid red;
+    border: 1px solid red;
 }
-.previewImg{
+#previewImg1{
+  height: 50%;
+  width: 100%;
+  /*background: url("images/firstLevel01.png");*/
+  background: url("../minified/images/firstLevel01.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  float:left;
+}
+#previewImg2{
   height: 50%;
   width: 100%;
   /*background: url("images/firstLevel01.png");*/
@@ -368,7 +379,7 @@ h3:hover{
 }
 .previewText{
   height: 50%;
-  float:left;
+  text-align: center;
 }
 
 /*******************************************************************************

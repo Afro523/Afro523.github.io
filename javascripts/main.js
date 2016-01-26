@@ -15,7 +15,31 @@ function toggleController(headerClicked){
         }
     }
   } catch (e) {
-
     }
-
   };
+
+function scrollStart(element) {
+
+  try {
+    window.scroll(0,findPos(document.getElementById('projectsPreview')));
+
+
+    var ele = document.getElementById(element);
+    console.log(ele.offsetTop);
+    window.scrollTo(0, ele.offsetTop);
+
+  } catch (e) {
+    console.log(e.message);
+    console.log(e.name);
+  }
+}
+
+function findPos(obj) {
+    var curtop = 0;
+    if (obj.offsetParent) {
+        do {
+            curtop += obj.offsetTop;
+        } while (obj = obj.offsetParent);
+    return [curtop];
+    }
+}
