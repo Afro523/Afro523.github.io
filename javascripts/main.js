@@ -19,27 +19,25 @@ function toggleController(headerClicked){
   };
 
 function scrollStart(element) {
+    var ele = typeof element === "string" ? document.getElementById(element) : element;
+    var DistanceNeededY = ele.offsetTop * 0.80;
 
-  try {
-    window.scroll(0,findPos(document.getElementById('projectsPreview')));
+    //Experimental
+    var scrollStep = Math.PI / (1000/15),
+    cosParameter = DistanceNeededY /2;
+    var scrollCount = 0,
+        scrollMargin,
+        scrollInterval = setInterval( function() {
+          if (DistanceNeededY != 0) {
+            scrollCount = scrollCount + 1;
+            scrollMargin = cosParameter - cosParameter * Math.cos( scrollCount * scrollStep );
+            window.scrollTo( 0, ( DistanceNeededY - scrollMargin ) );
+          } else {
+            clearInterval(scrollInterval);
+          }
+        }, 15);
+
+  //  window.scrollTo(0, ele.offsetTop * 0.75);
 
 
-    var ele = document.getElementById(element);
-    console.log(ele.offsetTop);
-    window.scrollTo(0, ele.offsetTop);
-
-  } catch (e) {
-    console.log(e.message);
-    console.log(e.name);
-  }
-}
-
-function findPos(obj) {
-    var curtop = 0;
-    if (obj.offsetParent) {
-        do {
-            curtop += obj.offsetTop;
-        } while (obj = obj.offsetParent);
-    return [curtop];
-    }
 }
