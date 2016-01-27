@@ -453,7 +453,7 @@ Small Device Styles
   .previewImg{
     height: 50%;
     width: 100%;
-    /*background: url("images/firstLevel01.png");*/
+    background: url("images/firstLevel01.png");
     background: url("../minified/images/firstLevel01.png");
     background-size: cover;
     background-repeat: no-repeat;
