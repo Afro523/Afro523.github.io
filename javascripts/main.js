@@ -25,6 +25,10 @@ function scrollStart(element) {
     //Experimental
     var scrollStep = Math.PI / (1000/15),
     cosParameter = DistanceNeededY /2;
+
+    console.log('scrollStep = ' + scrollStep);
+    console.log('cosParameter = ' + cosParameter);
+
     var scrollCount = 0,
         scrollMargin,
         scrollInterval = setInterval( function() {
@@ -32,6 +36,11 @@ function scrollStart(element) {
             scrollCount = scrollCount + 1;
             scrollMargin = cosParameter - cosParameter * Math.cos( scrollCount * scrollStep );
             window.scrollTo( 0, ( DistanceNeededY - scrollMargin ) );
+            console.log('DistanceNeededY = ' + DistanceNeededY);
+            console.log('scrollCount = ' + scrollCount);
+            console.log('scrollMargin = ' + scrollMargin);
+            console.log('scrollInterval = ' + scrollInterval);
+            console.log('scrollCount = ' + scrollCount);
           } else {
             clearInterval(scrollInterval);
           }
