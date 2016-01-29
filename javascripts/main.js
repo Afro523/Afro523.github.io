@@ -18,35 +18,65 @@ function toggleController(headerClicked){
     }
   };
 
-function scrollStart(element) {
-    var ele = typeof element === "string" ? document.getElementById(element) : element;
-    var DistanceNeededY = ele.offsetTop * 0.80;
+window.requestAnimFrame = (function(){
+  return  window.requestAnimationFrame       ||
+          window.webkitRequestAnimationFrame ||
+          window.mozRequestAnimationFrame    ||
+          function( callback ){
+            window.setTimeout(callback, 1000 / 60);
+          };
+})();
 
-    //Experimental
-    var scrollStep = Math.PI / (1000/15),
-    cosParameter = DistanceNeededY /2;
-
-    console.log('scrollStep = ' + scrollStep);
-    console.log('cosParameter = ' + cosParameter);
-
-    var scrollCount = 0,
-        scrollMargin,
-        scrollInterval = setInterval( function() {
-          if (DistanceNeededY != 0) {
-            scrollCount = scrollCount + 1;
-            scrollMargin = cosParameter - cosParameter * Math.cos( scrollCount * scrollStep );
-            window.scrollTo( 0, ( DistanceNeededY - scrollMargin ) );
-            console.log('DistanceNeededY = ' + DistanceNeededY);
-            console.log('scrollCount = ' + scrollCount);
-            console.log('scrollMargin = ' + scrollMargin);
-            console.log('scrollInterval = ' + scrollInterval);
-            console.log('scrollCount = ' + scrollCount);
-          } else {
-            clearInterval(scrollInterval);
-          }
-        }, 15);
-
-  //  window.scrollTo(0, ele.offsetTop * 0.75);
+function scrollToY(scrollTarget) {
+    // scrollTargetY: the target scrollY property of the window
+    // speed: time in pixels per second
+    // easing: easing equation to use
+    var ele = document.getElementById(scrollTarget),
+    position = ele.getBoundingClientRect(),
+    y = position.top,
+    scrollY = 0,
+    scrollTargetY = y ,
+    speed = speed || 1000,
+    easing = easing || 'easeInOutSine',
+    currentTime = 0;
 
 
+    // min time .1, max time .8 seconds
+    var time = Math.max(0.5, Math.min(Math.abs(scrollY - scrollTargetY) / speed, 0.5));
+
+    // easing equations from https://github.com/danro/easing-js/blob/master/easing.js
+    var PI_D2 = Math.PI / 2,
+        easingEquations = {
+            easeOutSine: function (pos) {
+                return Math.sin(pos * (Math.PI / 2));
+            },
+            easeInOutSine: function (pos) {
+                return (-0.5 * (Math.cos(Math.PI * pos) - 1));
+            },
+            easeInOutQuint: function (pos) {
+                if ((pos /= 0.5) < 1) {
+                    return 0.5 * Math.pow(pos, 5);
+                }
+                return 0.5 * (Math.pow((pos - 2), 5) + 2);
+            }
+        };
+
+    // add animation loop
+    function tick() {
+        currentTime += 1 / 60;
+
+        var p = currentTime / time;
+        var t = easingEquations[easing](p);
+
+        if (p < 1) {
+            requestAnimFrame(tick);
+
+            window.scrollTo(0, scrollY + ((scrollTargetY - scrollY) * t));
+        } else {
+            console.log('scroll done');
+            window.scrollTo(0, scrollTargetY);
+        }
+    }
+    // call it once to get started
+    tick();
 }

@@ -16,9 +16,9 @@
       <input class="menu-btn" type="checkbox" id="menu-btn" />
       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
       <ul class="menu">
-        <li><a href="#about">About Me</a></li>
-        <li><a onclick="toggleController(1); scrollStart(projectsHeader);">Some Projects</a></li>
-        <li><a href="#careers">Resume</a></li>
+        <li><a href="#about" onclick="scrollToY('projectsHeader'); toggleController(0);">About Me</a></li>
+        <li><a href="#projects" onclick="toggleController(1); scrollToY('projectsHeader');">Some Projects</a></li>
+        <li><a href="#careers" onclick="toggleController(2); scrollToY('computersHeader')">Computers</a></li>
         <li><a href="#careers">CV</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -50,13 +50,14 @@
             <p id="previewImg2"></p>
             <p class="previewText">Texting Tutor <br> A simple game made using the Ionic Framework</p>
           </div>
+        </div>
+      <h3 id="computersHeader"  onclick="toggleController(2)">Computers</h3>
+        <div id="computerCellsHolder" class="toggleable">
           <div class="projectPreviewCell">
-            <p id="previewImg2"></p>
+            <p id="previewImg3"></p>
             <p class="previewText">Computers <br>Handmade with love and a little nerdyness </p>
           </div>
         </div>
-      <h3 onclick="toggleController(2)">Resume</h3>
-        <p class="infoParagraph"></p>
       <h3 onclick="toggleController(3)">Curriculum Vitae</h3>
         <p class="infoParagraph"></p>
       <h3>Contact Me</h3>
