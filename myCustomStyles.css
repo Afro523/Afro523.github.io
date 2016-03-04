@@ -1,5 +1,26 @@
 #previewSlide{
     width: 50%;
     height: 50%;
-    float: right;
+}
+
+#myCarousel{
+	float: right;
+}
+
+.resume{
+	margin-top: 7%
+}
+
+.navbarCustom{
+	float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+	color: #8E7E95;
+}
+
+.navbarCustom:hover{
+	transition: 4s, linear;
+	color:#00FA1E;
 }
