@@ -25,18 +25,15 @@
 	color:#00FA1E;
 }
 
-<<<<<<< Updated upstream
 @media(max-width: 650px){
 
 	.carouselText{
 		font-size: 16px;
 	}
 
-=======
 .btn-primary{
 	padding: 1%;
 }
 .btn-primary:hover{
 	transition: 1s linear;
->>>>>>> Stashed changes
 }
