@@ -2,6 +2,8 @@
 <html>
     <head>
         <title>Projects </title>
+        <link rel="stylesheet" type="text/css" href="myCustomStyles.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     </head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <body>
@@ -32,36 +34,56 @@
     <div class="jumbotron">
       <div class="container">
         <h1>Joshua Resnick</h1>
-        <h3>Projects<h3>
+        <p>Projects</p>
       </div>
     </div>
       <!-- Content of page -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Recursive Compiler for a Subset of C</h2>
+      <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Recursive Compiler for a Subset of C</a>
+                </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in">
           <h5>Still being developed</h5>
-            <ul class="list-group">
-              <li class="list-group-item">Constructed a Recursive Compiler for C in Java</li>
-              <li class="list-group-item">Compiler</li>
-              <li class="list-group-item">Level Design in Unreal Development Kit</li>
-            </ul>
-          <p><a type="link" class="btn btn-default" href="projects.html" role="button">Take A Look &raquo;</a></p>
+            
+              <p>Constructing a Recursive Compiler for a subset of C in Java</p>
+              <p>At the end of the semester it should be able to fully compile almost any program</p>
+              <p>The recursive design in theory should half the run time of any program compiled</p>
+    
+          <p><a type="link" class="btn btn-default" href="https://github.com/Afro523/Compiler-Construction" role="button">Fork It &raquo;</a></p>
+            </div>
         </div>
-        
-        <div class="col-md-4">
-          <h2>Levels Made with Unreal Development Kit</h2>
-          <p> Computers made by hand with love and a little nerdyness </p>
-          <p><a type="link" class="btn btn-default" href="computers.html" role="button">Learn More &raquo;</a></p>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Levels Made With Unreal Development Kit</a>
+                </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p>Bootstrap is a powerful front-end framework for faster and easier web development. It is a collection of CSS and HTML conventions. <a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/">Learn more.</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Texting Tutor (Prototype)</a>
+                </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p>Developed using the Ionic Framwork</p>
+                    <p>Built using Angular JS, SCSS, and HTML (all parts of the Ionic Framework)</p>
+                    <p>Inspired by many years of using Mavis Beacon</p>
+                    <p><a type="link" class="btn btn-default" href="#" role="button">Email Me &raquo;</a></p>
+                </div>
+            </div>
+        </div>
        </div>
-       
-        <div class="col-md-4">
-          <h2>Texting Tutor (Prototype)</h2>
-          <p>Developed using the Ionic Framwork</p>
-          <p>Fork me on Github</p>
-          <p><a type="link" class="btn btn-default" href="#" role="button">Email Me &raquo;</a></p>
-        </div>
-      </div>
-      <hr>
+
       <footer>
         <p>&copy; 2016 Joshua Resnick</p>
       </footer>
@@ -69,7 +91,6 @@
    <!-- Bootstrap core JavaScript ================================================== -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <script type="text/javascript" src="contact.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     </body>
