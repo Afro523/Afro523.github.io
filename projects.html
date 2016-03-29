@@ -24,7 +24,7 @@
               <a type="link" class="btn btn-primary" href="projects.html" role="button">Projects</a>
               <a type="link" class="btn btn-primary" href="computers.html" role="button">Computers</a>
               <a type="link" class="btn btn-primary" href="resume.html" role="button">Resume</a>
-              <a type="link" class="btn btn-primary" href="contact.html" role="button">Contact Me</a>
+              <a type="link" class="btn btn-primary" data-toggle="modal" data-target="#contactModal" role="button">Contact Me</a>
           </form>
         </div><!--/.navbar-collapse -->
       </div>
@@ -35,6 +35,47 @@
       <div class="container">
         <h1>Joshua Resnick</h1>
         <p>Projects</p>
+          <!-- Modal -->
+            <div class="modal fade" id="contactModal" role="dialog">
+              <div class="modal-dialog">
+              
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Contact Me</h4>
+                  </div>
+                  <div class="modal-body">
+                    <div class="form-group" action="" method="post">
+                        <label for="InputName">Your Name</label>
+                        <div class="input-group">
+                          <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Enter Name" required>
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+                      </div>
+                      <div class="form-group">
+                        <label for="InputEmail">Your Email</label>
+                        <div class="input-group">
+                          <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Email" required  >
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+                      </div>
+                      <div class="form-group">
+                        <label for="InputMessage">Message</label>
+                        <div class="input-group">
+                          <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+                      </div>
+                      <div class="form-group">
+                        <label for="InputReal">What is 4+3? (Simple Spam Checker)</label>
+                        <div class="input-group">
+                          <input type="text" class="form-control" name="InputReal" id="InputReal" required>
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+                      </div>
+                    <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right">
+                  </div>
+                </div>
+              </div>    
+            </div>
+          </div>
       </div>
     </div>
       <!-- Content of page -->
@@ -42,13 +83,13 @@
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Recursive Compiler for a Subset of C</a>
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Compiler for a Subset of C</a>
                 </h4>
             </div>
             <div id="collapseOne" class="panel-collapse collapse in">
           <h5>Still being developed</h5>
             
-              <p>Constructing a Recursive Compiler for a subset of C in Java</p>
+              <p>Constructing a Compiler for a subset of C in Java</p>
               <p>At the end of the semester it should be able to fully compile almost any program</p>
               <p>The recursive design in theory should half the run time of any program compiled</p>
     
