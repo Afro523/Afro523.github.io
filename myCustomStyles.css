@@ -26,6 +26,10 @@
 	color:#00FA1E;
 }
 
+.img-responsive{
+	overflow:hidden;
+}
+
 @media(max-width: 650px){
 
 	.carouselText{
