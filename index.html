@@ -27,9 +27,9 @@
         <div id="navbar" class="navbar-collapse collapse">
           <form class="navbar-form navbar-right">
               <a type="link" class="btn btn-primary" href="index.html" role="button">Home</a>
-              <a type="link" class="btn btn-primary" href="projects.html" role="button">Projects</a>
-              <a type="link" class="btn btn-primary" href="computers.html" role="button">Computers</a>
-              <a type="link" class="btn btn-primary" href="resume.html" role="button">Resume</a>
+              <a type="link" class="btn btn-primary" href="pages/projects.html" role="button">Projects</a>
+              <a type="link" class="btn btn-primary" href="pages/computers.html" role="button">Computers</a>
+              <a type="link" class="btn btn-primary" href="pages/resume.html" role="button">Resume</a>
               <a type="link" class="btn btn-primary" data-toggle="modal" data-target="#contactModal" role="button">Contact Me</a>
           </form>
         </div><!--/.navbar-collapse -->
@@ -51,34 +51,11 @@
                 <div class="modal-content">
                   <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Contact Me</h4>
+                    <h4 class="modal-title">Contact</h4>
                   </div>
-                  <div class="modal-body">
-                    <div class="form-group" action="" method="post">
-                        <label for="InputName">Your Name</label>
-                        <div class="input-group">
-                          <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Enter Name" required>
-                          <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
-                      </div>
-                      <div class="form-group">
-                        <label for="InputEmail">Your Email</label>
-                        <div class="input-group">
-                          <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Email" required  >
-                          <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
-                      </div>
-                      <div class="form-group">
-                        <label for="InputMessage">Message</label>
-                        <div class="input-group">
-                          <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
-                          <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
-                      </div>
-                      <div class="form-group">
-                        <label for="InputReal">What is 4+3? (Simple Spam Checker)</label>
-                        <div class="input-group">
-                          <input type="text" class="form-control" name="InputReal" id="InputReal" required>
-                          <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
-                      </div>
-                    <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right">
+                  <div class="modal-body text-center">
+                    <p>Feel free to contact me <br> @</p>
+                    <button href="mailto:Jresnick.public@gmail.com?Subject=Contact From Afro523.github.io" class="btn btn-primary">Jresnick.public@gmail.com</button>
                   </div>
                 </div>
               </div>    
@@ -89,28 +66,34 @@
         <!-- Indicators -->
         <div id="previewSlide" class="carousel-inner pull-right" role="listbox">
           <div class="item active">
-            <img class="first-slide img-responsive" src="minified/images/FirstLevel02.PNG" alt="First slide">
-              <div class="container">
-                <div class="carousel-caption">
-                  <h3 class="carouselText">Made in UDK</h3>
+            <a href="pages/projects.html">
+              <img class="first-slide img-responsive" src="minified/images/FirstLevel02.PNG" alt="First slide">
+                <div class="container">
+                  <div class="carousel-caption">
+                    <h3 class="carouselText">Made in UDK</h3>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
             <div class="item">
-              <img class="second-slide img-responsive" src="minified/images/Inside01.jpg" alt="Second slide">
-              <div class="container">
-                <div class="carousel-caption">
-                  <h3 class="carouselText">Handmade With Love</h3>
+              <a href="pages/computers.html">
+                <img class="second-slide img-responsive" src="minified/images/Inside01.jpg" alt="Second slide">
+                <div class="container">
+                  <div class="carousel-caption">
+                    <h3 class="carouselText">Handmade With Love</h3>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
             <div class="item">
-              <img class="third-slide img-responsive" src="minified/images/Parser.png" alt="Third slide">
-              <div class="container">
-                <div class="carousel-caption">
-                  <h3 class="carouselText">Compiler W/ Recursive Parser</h3>
+              <a href="pages/projects.html">
+                <img class="third-slide img-responsive" src="minified/images/Parser.png" alt="Third slide">
+                <div class="container">
+                  <div class="carousel-caption">
+                    <h3 class="carouselText">Compiler W/ Recursive Parser</h3>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </div><!-- /.carousel -->
@@ -122,41 +105,40 @@
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-4">
-          <h3>Projects</h3>
+          <h2>Projects</h2>
           <h5>Some work I have done:</h5>
             <ul class="list-group">
               <li class="list-group-item">Constructed a Compiler for C in Java</li>
-              <li class="list-group-item">Texting Tutor (App Prototype)</li>
               <li class="list-group-item">Level Design in Unreal Development Kit</li>
             </ul>
-          <p><a type="link" class="btn btn-default" href="projects.html" role="button">Take A Look &raquo;</a></p>
+          <p><a type="link" class="btn btn-default" href="pages/projects.html" role="button">Take A Look &raquo;</a></p>
         </div>
         <div class="col-md-4">
-          <h3>Homemade Computers</h3>
+          <h2>Homemade Computers</h2>
           <h5>Just a Passion</h5>
             <ul class="list-group">
-              <li class="list-group-item">Computers made by hand with love and a little nerdyness</li>
+              <li class="list-group-item">Computers I have made by hand with love</li>
               <li class="list-group-item">Game Lover Machines</li>
-              <li class="list-group-item">They are over 9,000</li>
             </ul>
-          <p><a type="link" class="btn btn-default" href="computers.html" role="button">Learn More &raquo;</a></p>
+          <p><a type="link" class="btn btn-default" href="pages/computers.html" role="button">Peek Inside &raquo;</a></p>
        </div>
         <div class="col-md-4">
           <h2>Resume</h2>
+          <h5>A Summary of Me</h5>
           <ul class="list-group">
               <li class="list-group-item">Summary of my skills and strengths</li>
               <li class="list-group-item">Includes prior work positions</li>
             </ul>
-          <p><a type="link" class="btn btn-default" href="resume.html" role="button">Resume &raquo;</a></p>
+          <p><a type="link" class="btn btn-default" href="pages/resume.html" role="button">Resume &raquo;</a></p>
         </div>
       </div>
       <hr>
+
+    </div> <!-- /container -->
+
       <footer>
         <p>&copy; 2016 Joshua Resnick</p>
       </footer>
-    </div> <!-- /container -->
-
-
     <!-- Bootstrap core JavaScript ================================================== -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
