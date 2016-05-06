@@ -20,6 +20,11 @@ body { padding-bottom: 2%;
 	margin-top: 7%
 }
 
+.img-container{
+height:25%;
+width: 50%;
+}
+
 .navbarCustom{
 	float: left;
     height: 50px;
@@ -35,6 +40,7 @@ body { padding-bottom: 2%;
 }
 
 .img-responsive{
+	height:50%;
 	overflow:hidden;
 }
 
