@@ -21,8 +21,8 @@ body { padding-bottom: 2%;
 }
 
 .img-container{
-height:25%;
-width: 50%;
+	height: 100%;
+	width: 50%;
 }
 
 .navbarCustom{
@@ -44,15 +44,30 @@ width: 50%;
 	overflow:hidden;
 }
 
+#starthidden{
+	display:none;
+}
+
+@media(max-width: 800px){
+		#tobehidden{
+		display:none;
+	}
+	#starthidden{
+		display:block;
+	}
+}
+
 @media(max-width: 650px){
 
 	.carouselText{
 		font-size: 16px;
+		}
+
+	.btn-primary{
+		padding: 1%;
+	}
+	.btn-primary:hover{
+		transition: 1s linear;
 	}
 
-.btn-primary{
-	padding: 1%;
-}
-.btn-primary:hover{
-	transition: 1s linear;
 }
