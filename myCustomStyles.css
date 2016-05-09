@@ -47,9 +47,26 @@ body { padding-bottom: 2%;
 #starthidden{
 	display:none;
 }
+.modalTable{
+	margin-left: 3%;
+}
 
 @media(max-width: 800px){
-		#tobehidden{
+
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+    .navbar-header .collapse, .navbar-toggle {
+        display:block !important;
+    }
+    .navbar-header {
+        float:none;
+    }
+
+	#tobehidden{
 		display:none;
 	}
 	#starthidden{
