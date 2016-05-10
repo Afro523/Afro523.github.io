@@ -16,13 +16,12 @@ body { padding-bottom: 2%;
 	float: right;
 }
 
-.resume{
-	margin-top: 7%
+.compPreview{
+	width:75%;
 }
 
-.img-container{
-	height: 100%;
-	width: 50%;
+.resume{
+	margin-top: 7%
 }
 
 .navbarCustom{
@@ -37,11 +36,6 @@ body { padding-bottom: 2%;
 .navbarCustom:hover{
 	transition: 4s, linear;
 	color:#00FA1E;
-}
-
-.img-responsive{
-	height:50%;
-	overflow:hidden;
 }
 
 #starthidden{
