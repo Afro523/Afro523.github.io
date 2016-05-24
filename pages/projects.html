@@ -7,7 +7,6 @@
         <link rel="stylesheet" type="text/css" href="../myCustomStyles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <body>
       <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
@@ -22,11 +21,11 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <form class="navbar-form navbar-right">
-              <a type="link" class="btn btn-primary" href="../index.html" role="button">Home</a>
-              <a type="link" class="btn btn-primary" href="projects.html" role="button">Projects</a>
-              <a type="link" class="btn btn-primary" href="computers.html" role="button">Computers</a>
-              <a type="link" class="btn btn-primary" href="resume.html" role="button">Resume</a>
-              <a type="link" class="btn btn-primary" data-toggle="modal" data-target="#contactModal" role="button">Contact Me</a>
+              <a type="link" class="btn btn-primary nav-button" href="../index.html" role="button">Home</a>
+              <a type="link" class="btn btn-primary nav-button" href="projects.html" role="button">Projects</a>
+              <a type="link" class="btn btn-primary nav-button" href="computers.html" role="button">Computers</a>
+              <a type="link" class="btn btn-primary nav-button" href="resume.html" role="button">Resume</a>
+              <a type="link" class="btn btn-primary nav-button" data-toggle="modal" data-target="#contactModal" role="button">Contact Me</a>
           </form>
         </div><!--/.navbar-collapse -->
       </div>
@@ -67,11 +66,11 @@
             </div>
             <div id="collapseOne" class="panel-collapse collapse in">
               <div class="panel-body">
-                <div class="media">
-                  <div class="media-left">
-                    <img class="media-object" src="../images/compiler.png" alt="...">
+                <div class="container-fluid">
+                  <div class="col-xs-12 col-sm-5">
+                    <img class="img-responsive" src="../images/compiler.png" alt="...">
                   </div>
-                  <div class="media-body">
+                  <div class="col-xs-12 col-sm-5">
                     <h4 class="media-heading">In Development</h4>
                     <p>Constructing a Compiler for a subset of C written in Java</p>
                     <p>Has the ability to use arrays</p>
@@ -88,16 +87,16 @@
             </div>
             <div id="collapseTwo" class="panel-collapse collapse">
                 <div class="panel-body">
-                  <div class="media">
-                  <div class="media-left">
-                    <img class="media-object" src="../images/tinyBridge.jpg">
+                  <div class="contianer-fluid">
+                    <div class="col-xs-12 col-sm-5">
+                      <img class="img-responsive" src="../images/tinyBridge.jpg">
+                    </div>
+                    <div class="col-xs-12 col-sm-5">
+                      <h4 class="media-heading">Prototype</h4>
+                      <p>Levels created using UDK</p>
+                      <p>Created dynamic sunlight shading</p>
+                    </div>
                   </div>
-                  <div class="media-body">
-                    <h4 class="media-heading">Prototype</h4>
-                    <p>Levels created using UDK</p>
-                    <p>Created dynamic sunlight shading</p>
-                  </div>
-                </div>
                 </div>
             </div>
         </div>
@@ -108,18 +107,16 @@
                 </h4>
             </div>
             <div id="collapseThree" class="panel-collapse collapse">
-              <div class="panel-body">
-                <div class="media">
-                  <div class="media-left">
-                    <img class="media-object" src="../images/ionic.png">
+              <div class="container-fluid">
+                  <div class="col-xs-12 col-sm-5">
+                    <img class="img-responsive" src="../images/ionic.png">
                   </div>
-                  <div class="media-body">
+                  <div class="col-xs-12 col-sm-5">
                     <h4 class="media-heading">Prototype</h4>
-                    <p>Developed using the Ionic Framwork</p>
-                    <p>Built using Angular JS, SCSS, and HTML (all parts of the Ionic Framework)</p>
+                    <p>Developed using the Ionic Framwork
+                    <p>Built using Angular JS, SCSS, and HTML (all parts of the Ionic Framework)
                     <p>Inspired by many years of using Mavis Beacon by Software Toolworks while growing up</p>
                   </div>
-                </div>
               </div>
             </div>
           </div>
@@ -131,16 +128,15 @@
             </div>
             <div id="collapseFour" class="panel-collapse collapse">
                 <div class="panel-body">
-                  <div class="media">
-                    <div class="media-left">
-                      <img class="media-object" src="../images/gdmp.png">
+                  <div class="container-fluid">
+                    <div class="col-xs-12 col-sm-5">
+                      <img class="img-responsive" src="../images/gdmp.png">
                     </div>
-                    <div class="media-body">
+                    <div class="col-xs-12 col-sm-5">
                       <h4 class="media-heading">GDMP</h4>
-                      <p>Broswer based intranet application</p>
-                      <p>Full front to back end system</p>
-                      <p>This system is meant to be used by school's career services departments to edit, maintain and generate graphs for student outcomes.</p>
-                      <p><a type="link" class="btn btn-default" href="#" role="button">Email Me &raquo;</a></p>
+                      <p>Broswer based intranet application with a full front to back end system.
+                      This system is meant to be used by school's career services departments to edit, maintain and generate graphs for student outcomes.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -160,7 +156,6 @@
    <!-- Bootstrap core JavaScript ================================================== -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script type="text/javascript" src="contact.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     </body>
 </html>

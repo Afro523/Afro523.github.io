@@ -24,6 +24,10 @@ body { padding-bottom: 2%;
 	margin-top: 7%
 }
 
+.nav-button{
+	margin-bottom: .7%;
+}
+
 .navbarCustom{
 	float: left;
     height: 50px;
