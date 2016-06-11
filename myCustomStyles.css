@@ -37,6 +37,10 @@ body { padding-bottom: 2%;
 	color: #8E7E95;
 }
 
+.navbarCustom:before{
+	content: "Joshua Resnick Dev && Design";
+}
+
 .navbarCustom:hover{
 	transition: 4s, linear;
 	color:#00FA1E;
@@ -92,4 +96,10 @@ body { padding-bottom: 2%;
 		transition: 1s linear;
 	}
 
+}
+
+@media(max-width: 350px){
+	.navbarCustom:before{
+		content:"Joshua Resnick";
+	}
 }
