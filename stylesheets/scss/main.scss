@@ -1,0 +1,224 @@
+@import "components/_color";
+
+@font-face{
+	font-family: "No Man Sky";
+	src: url(../fonts/geonms-webfont.ttf) format("truetype");
+}
+
+body{
+	background-color: color("grey", lighten-2);
+	overflow-y: hidden;
+}
+
+.navbar-fixed{
+	font-family: "No Man Sky";
+	font-weight: bold;
+}
+
+ul li {
+	&.active{
+		a{
+			color: red;
+		}
+	}
+}
+
+h1{
+	font-family: "No Man Sky";
+	font-weight: bold;
+	position:relative;
+	z-index: 10;
+	color:white;
+}
+
+h2{
+	font-family: "No Man Sky";
+	font-weight: bold;
+	position:relative;
+	z-index: 10;
+	color:white;
+}
+
+h3{
+	font-family: "No Man Sky";
+	font-weight: bold;
+}
+
+h4{
+	font-family: "No Man Sky";
+	font-weight: bold;
+}
+
+
+
+/////
+/////	Home Panel
+/////
+
+.home-panel{
+	display:flex;
+	justify-content: center;
+	align-content:center;
+	padding-top: 15%;
+	text-align: center;
+}
+
+.titleDivider{
+	height: 5px;
+	border-radius: 5px;
+	background-color:white !important;
+	z-index: 10;
+	position: relative;
+}
+
+
+/////
+/////	Project Panel
+/////
+
+.landingPictures{
+	height:45%;
+}
+
+#project-panel{
+	float:left;
+	width:70%;
+	height: 100%;
+	margin-top:10px;
+	padding-bottom: 30px;
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items:space-around;
+}
+
+.imgContainer{
+	height:100%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+.modal{
+	height: 100%;
+	max-height: 100%;
+	overflow-y: hidden;
+	top: 0px !important;
+	background-color: transparent;
+	
+	box-shadow: none;
+}
+#info-panel{
+  float:right;
+  border-left: 5px solid black;
+  width:30%;
+  height: 100%;
+}
+
+#project-menu{
+	padding-bottom: 10px;
+	display:flex;
+	flex-direction:column;
+	flex-wrap:wrap;
+}
+
+#project-description{
+	p{
+		margin: 5px;
+	}
+}
+
+.projectBtn{
+	margin: 5px;
+}
+
+#skills{
+	border-top: 2px solid black;
+}
+
+.minApp{
+	max-width: 30% !important;	
+}
+
+.godp{
+	max-height: 34% !important;	
+	max-width: 45%;
+}
+
+.lvlDesign{
+	max-height: 35% !important;
+	max-width: 45%;
+}
+
+/////
+/////	About Panel
+/////
+.profilePic{
+	width: 25% !important;
+}
+
+/////
+/////	Contact Panel
+/////
+
+#contactDiv{
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.contactBtn{
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.contactImg{
+	height:75px;
+}
+
+.contactHeader{
+	margin-top: 0px;
+	padding-top: 15%;
+}
+
+.contactDivider{
+	height:5px;
+	border-radius: 10px;
+	background-color: color("grey", darken-4);
+	margin: 10px;
+	margin-right: 25%;
+	margin-left: 25%;
+}
+
+
+@media only screen and (max-width: 1600px) {
+    .lvlDesign{
+		max-height: 30% !important;
+	}
+	.minApp{
+		max-height: 100% !important;	
+	}
+}
+
+@media only screen and (max-width: 1100px) {
+    .lvlDesign{
+		max-height: 25% !important;
+	}
+	.minApp{
+		max-height: 100% !important;	
+	}
+}
+
+@media only screen and (max-width: 900px) {
+    .lvlDesign{
+		max-height: 20% !important;
+	}
+	
+}
+
+@media only screen and (max-width: 700px) {
+    .lvlDesign{
+		max-height: 17% !important;
+	}
+}

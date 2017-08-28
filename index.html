@@ -1,167 +1,128 @@
-<!DOCTYPE html>
-<html>
-  <head>
-      <title>JoshuaResnickDev.com</title>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-      <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })
-        (window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-          ga('create', 'UA-78678062-1', 'auto');
-          ga('send', 'pageview');
-      </script>
-      <link rel="stylesheet" type="text/css" href="myCustomStyles.css">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
-  <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a href="index.html">
-          <a class="navbarCustom"> <!--  Title Bar Inserted Through css--></a>
-          </a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right">
-              <a type="link" class="btn btn-primary nav-button" href="index.html" role="button">Home</a>
-              <a type="link" class="btn btn-primary nav-button" href="pages/projects.html" role="button">Projects</a>
-              <a type="link" class="btn btn-primary nav-button" href="pages/computers.html" role="button">Computers</a>
-              <a type="link" class="btn btn-primary nav-button" href="pages/resume.html" role="button">Resume</a>
-              <a type="link" class="btn btn-primary nav-button" data-toggle="modal" data-target="#contactModal" role="button">Contact Me</a>
-          </form>
-        </div><!--/.navbar-collapse -->
-      </div>
-    </nav> <!-- /Nav -->
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Joshua Resnick</title>
+		<meta name="description" content="A Personal Portfolio Site">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link href="minified/stars-min.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    	<link rel="stylesheet" href="minified/materialize-min.css">
+		<link href="minified/animate-min.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    	<link href="minified/main-min.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    	
+    	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	</head>
+	<body>
 
-    <!-- Main jumbotron -->
-    <div class="jumbotron">
-      <div class="container-fluid">
-      <div class="col-md-6">
-        <h1>Joshua Resnick</h1>
-        <p>Software Developer and Web Designer</p>       
-        </div>
-        <!-- Modal -->
-            <div class="modal fade" id="contactModal" role="dialog">
-              <div class="modal-dialog">
-              
-                <!-- Modal content-->
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Contact</h4>
-                  </div>
-                  <div class="modal-body text-center">
-                    <p>Feel free to contact me <br> @</p>
-                    <a href="mailto:Jresnick.public@gmail.com?Subject=Contact From Afro523.github.io" class="btn btn-primary">Jresnick.public@gmail.com</a>
-                  </div>
-                </div>
-              </div>    
-            </div>
-    <div class="col-md-6">
-<!-- Carousel================================================== -->
-      <div id="myCarousel" class="carousel slide pull-right" data-ride="carousel" data-interval="2000">
-        <!-- Indicators -->
-        <div id="previewSlide" class="carousel-inner pull-right" role="listbox">
-          <div class="item active">
-            <a href="pages/projects.html">
-              <img class="first-slide img-responsive" src="images/FirstLevel02.PNG" alt="First slide">
-                <div class="container">
-                  <div class="carousel-caption">
-                    <h3 class="carouselText">Made in UDK</h3>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="item">
-              <a href="pages/computers.html">
-                <img class="second-slide img-responsive" src="minified/images/Inside01.jpg" alt="Second slide">
-                <div class="container">
-                  <div class="carousel-caption">
-                    <h3 class="carouselText">Handmade With Love</h3>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="item">
-              <a href="pages/projects.html">
-                <img class="third-slide img-responsive" src="minified/images/Parser.png" alt="Third slide">
-                <div class="container">
-                  <div class="carousel-caption">
-                    <h3 class="carouselText">Compiler W/ Recursive Parser</h3>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div><!-- /.carousel -->
-      </div> <!-- /.container-fluid -->
-    </div>
-    </div>
+		<section class="panel home" data-section-name="home">
+			<div class="home-panel container">
 
-    <div class="container-fluid">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Projects</h2>
-          <h5>Some work I have done:</h5>
-            <ul class="list-group">
-              <li class="list-group-item">Constructed a Compiler for C in Java</li>
-              <li class="list-group-item">Level Design in Unreal Development Kit</li>
-            </ul>
-          <p><a type="link" class="btn btn-default" href="pages/projects.html" role="button">Take A Look &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-          <h2 id="tobehidden">Homemade Computers</h2>
-          <h2 id="starthidden" >Computers</h2>
-          <h5>Just a Passion</h5>
-            <ul class="list-group">
-              <li class="list-group-item">Computers I have made by hand with love</li>
-              <li class="list-group-item">Game Lover Machines</li>
-            </ul>
-          <p><a type="link" class="btn btn-default" href="pages/computers.html" role="button">Peek Inside &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
-          <h2>Resume</h2>
-          <h5>A Summary of Me</h5>
-          <ul class="list-group">
-              <li class="list-group-item">Summary of my skills and strengths</li>
-              <li class="list-group-item">Includes prior work positions</li>
-            </ul>
-          <p><a type="link" class="btn btn-default" href="pages/resume.html" role="button">Resume &raquo;</a></p>
-        </div>
-      </div>
-      <hr>
+				<div class="stars"></div>
+				<div class="twinkling"></div>
 
-    </div> <!-- /container -->
+				<div class="titleName">
+					<h1>Joshua Resnick</h1>	
+					<div class="titleDivider divider" ></div>
+					<h2>App Developer / Web Developer</h2>
+				</div>
+				
 
-      <div class="navbar-static-bottom">
-        <div class="container text-center">
-          <div class="row">
-            <a class="col-lg-1 col-centered" href="http://stackoverflow.com/users/5544781/afro?tab=profile"> 
-              <img class="img-responsive img-circle" src="images/stackoverflow.png">
-            </a>
-            <a class="col-lg-1 col-centered" href="https://github.com/Afro523"> 
-              <img class="img-responsive img-circle" src="images/github.png">
-            </a>
-            <a class="col-lg-1 col-centered" href="https://www.linkedin.com/in/joshuaresnickdev"> 
-              <img class="img-responsive img-circle" src="images/linkdin.png">
-            </a>
-          </div>
-        <p>&copy; 2016 Joshua Resnick</p>
-        </div>
-      </div>
+			</div>
+		</section>
 
-    <!-- Bootstrap core JavaScript ================================================== -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-  </body>
+		<section class="panel panel1" data-section-name="projects">
+      		<div id="project-panel">
+				<img id="minApp" class="landingPictures hoverable z-depth-1" src="images/minID1.png">
+				<img id="minApp" class="landingPictures hoverable z-depth-1" src="images/godpHome.png">
+				<img id="minApp" class="landingPictures hoverable z-depth-1" src="images/FirstLevel01.png">
+      		</div>
+
+			<div id="info-panel">
+				<div id="project-menu">
+					<h4>Projects</h4>
+					<div id="minApp" class="waves-effect waves-light btn projectBtn" >Pocket Mineral Guide</div>
+					<div id="godp" class="waves-effect waves-light btn projectBtn">Graduate Outcome Data Processing</div>
+					<div id="lvlDesign" class ="waves-effect waves-light btn projectBtn">Level Design</div>
+				</div>
+				<div id="skills">
+					<h4>Skills</h4>
+					<div id="skillsContainer">
+						<div class="chip">Click a project</div>
+					</div>
+				</div>
+				<h4>Description</h4>
+				<div id="project-description">
+					<div class="chip">To find out more</div>
+				</div>
+      		</div>
+		</section>
+
+		<section class="panel panel2" data-section-name="about">
+			<div class="container">
+				<div class="center-align"><img class="profilePic circle responsive-img" src="images/ProfilePic.jpg"></div>
+				<h3>Summary:</h3>
+				<div class="container">
+					Hi my name is Joshua Resnick and I am a developer who loves building apps and websites. I have been developing for a few years now and have loved every second of it.  To me the most important part of any website or app is making sure that the user has a pixel perfect layout and the smoothest of interactions.
+				</div>
+				<h3>Education:</h3>
+				<div class="container center-align">
+					<h4>M.S. Computer Science</h4>
+					<h4>B.S. Environmental Sciences and Mathematics</h4>
+				</div>
+				<h3>Skills:</h3>
+				<div class="container">
+					<div class="chip">Javascript (ES6)</div>
+					<div class="chip">Meteor Platform</div>
+					<div class="chip">React</div>
+					<div class="chip">Scss/Sass</div>
+					<div class="chip">Ionic Platform</div>
+					<div class="chip">AngularJS</div>
+					<div class="chip">PHP</div>
+					<div class="chip">Java</div>
+					<div class="chip">C</div>
+					<div class="chip">C++</div>
+					<div class="chip">HTML5</div>
+					<div class="chip">MySql</div>
+					<div class="chip">MongoDB</div>
+					<div class="chip">Webpack</div>
+					<div class="chip">Gulp</div>
+					<div class="chip">NPM</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="panel panel3" data-section-name="contact">
+			<h3 class="contactHeader center-align">Contact Me</h3>
+			<div class="contactDivider center-align" ></div>
+			<div id="contactDiv">
+					
+				<a class="contactBtn" href="https://www.github.com/afro523">
+					<img src="images/github.png" alt="" class="contactImg circle">
+				</a>
+				<a class="contactBtn" href="https://stackoverflow.com/users/5544781/afro">
+					<img src="images/stackoverflow.png" alt="" class="contactImg circle"></a>
+				<a class="contactBtn" href="https://www.linkedin.com/in/joshuaresnickdev">
+					<img src="images/linkdin.png" class="contactImg circle">
+				</a>
+				<a class="contactBtn" href="mailto:JResnick.public@gmail.com">
+					<img src="images/emailthumb2.png" class="contactImg circle">
+				</a>
+			</div>
+		</section>
+
+
+
+    <!-- Script Imports-->
+		<script type="text/javascript" src="minified/jquery-2.1.1-min.js"></script>
+		<script type="text/javascript" src="minified/jquery.scrollify-min.js"></script>
+		<script type="text/javascript" src="minified/materialize.min.js"></script>
+		<script type="text/javascript" src="minified/main-min.js"></script>
+		<script type="text/javascript">
+			$( document ).ready(function(){
+				$(".modal").modal();
+				$(".button-collapse").sideNav();
+			});
+		</script>
+	</body>
 </html>
