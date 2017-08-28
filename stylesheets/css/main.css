@@ -1631,7 +1631,8 @@ h2 {
 
 h3 {
   font-family: "No Man Sky";
-  font-weight: bold; }
+  font-weight: bold;
+  margin: 15px 0 15px 0; }
 
 h4 {
   font-family: "No Man Sky";
