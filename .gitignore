@@ -1,2 +1,4 @@
 *.scssc
 node_modules
+minified/jquery.scrollify.js
+minified/main.js
