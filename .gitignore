@@ -2,3 +2,4 @@
 node_modules
 minified/jquery.scrollify.js
 minified/main.js
+minified/jquery-2.1.1.js
