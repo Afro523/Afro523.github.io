@@ -104,7 +104,7 @@ $(function() {
 		},
 		afterRender:function() {
 			//Start of navbar
-			var pagination = "<div class=\"navbar-fixed\"> <nav> <div class=\"nav-wrapper\"> <a href=\"#home\" class=\"brand-logo\">Joshua Resnick Dev</a> <a href=\"#\" data-activates=\"mobile-menu\" class=\"button-collapse\"><i class=\"material-icons\">menu</i></a><ul class=\"right hide-on-med-and-down page\">";
+			var pagination = "<div class=\"navbar-fixed\"> <nav> <div class=\"nav-wrapper\"> <a href=\"#home\" class=\"brand-logo\">J.R. Dev</a> <a href=\"#\" data-activates=\"mobile-menu\" class=\"button-collapse\"><i class=\"material-icons\">menu</i></a><ul class=\"right hide-on-med-and-down page\">";
 			var sideNav = "<ul class=\"side-nav\" id=\"mobile-menu\">";
 			var activeClass = "";
 
