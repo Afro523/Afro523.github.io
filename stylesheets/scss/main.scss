@@ -2,11 +2,13 @@
 
 @font-face{
 	font-family: "No Man Sky";
-	src: url(../fonts/geonms-webfont.ttf) format("truetype");
+	src: url(../../../fonts/geonms-webfont.ttf) format("truetype");
 }
 
+$maincolor: color("grey", lighten-2);
+
 body{
-	background-color: color("grey", lighten-2);
+	background-color: $maincolor;
 	overflow-y: hidden;
 }
 
@@ -42,13 +44,13 @@ h2{
 h3{
 	font-family: "No Man Sky";
 	font-weight: bold;
-	margin: 10px 0 10px 0; 
+	
 }
 
 h4{
 	font-family: "No Man Sky";
 	font-weight: bold;
-	margin: 5px 0 5px 0; 	
+
 }
 
 h5{
@@ -81,21 +83,23 @@ h5{
 /////
 /////	Project Panel
 /////
+.col .s6{
+	padding: 10px;
+}
+.myContainer{
+	height: 100%;
+}
 
 .landingPictures{
 	height:45%;
 }
 
-#project-panel{
-	float:left;
-	width:70%;
+#projectContainer{
+	padding-top: 10px;
+	border-right: 5px inset black;
 	height: 100%;
-	margin-top:10px;
-	padding-bottom: 30px;
-	display: inline-flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	align-items:space-around;
+	max-height: 100%;
+
 }
 
 .imgContainer{
@@ -113,12 +117,6 @@ h5{
 	background-color: transparent;
 	
 	box-shadow: none;
-}
-#info-panel{
-  float:right;
-  border-left: 5px solid black;
-  width:30%;
-  height: 100%;
 }
 
 #project-menu{

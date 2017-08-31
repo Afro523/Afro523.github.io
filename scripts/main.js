@@ -41,7 +41,7 @@ var projectData = [
 
 //Project Data Loading
 $( "#project-menu > div" ).click( function(){selectProject(this)});
-$( "#project-panel > img" ).click( function(){selectProject(this)});
+$( "#project-panel > div > img" ).click( function(){selectProject(this)});
 function selectProject(obj) {
 	//reference projectData
 	var projectData =  getProjectData(obj.id);
@@ -63,21 +63,24 @@ function selectProject(obj) {
 	$("#project-panel").empty();
 	$.each((projectData.images), function(index, value){
 		if(projectData.id == "minApp"){
-			$("#project-panel").append("<a id=\"minPic"+index+"\" class=\"minApp animated fadeInLeft waves-effect waves-light modal-trigger\" href=\"#modal"+index+"\"> <img class=\"hoverable responsive-img z-depth-1\" src=\"images/"+value +"\"></a>");	
+			$("#project-panel").append("<a id=\"minPic"+index+"\" class=\"col s4 animated fadeInLeft waves-effect waves-light modal-trigger\" href=\"#modal"+index+"\"> <img class=\"hoverable responsive-img z-depth-1\" src=\"images/"+value +"\"></a>");	
 			$(".panel1").append("<div id=\"modal"+index+"\" class=\"modal\"><div id=\"modalImg"+index+"\" class=\"imgContainer\"></div></div>")
 			$("#modalImg"+index).css({"background-image": "url(images/"+value+")" });
 			document.getElementById("minPic"+index).onclick = function(){
     			openModal(index);
 				}
 		} else if(projectData.id == "godp"){
-			$("#project-panel").append("<a id=\"minPic"+index+"\" class=\"godp hoverable animated fadeInLeft waves-effect waves-light modal-trigger\" href=\"#modal"+index+"\"> <img class=\"responsive-img z-depth-1\" src=\"images/"+value +"\"></a>");	
+			$("#project-panel").append("<a id=\"minPic"+index+"\" class=\"col s6 animated fadeInLeft waves-effect waves-light modal-trigger\" href=\"#modal"+index+"\"> <img class=\"hoverable responsive-img z-depth-1\" src=\"images/"+value +"\"></a>");	
 			$(".panel1").append("<div id=\"modal"+index+"\" class=\"modal\"><div id=\"modalImg"+index+"\" class=\"imgContainer\"></div></div>")
 			$("#modalImg"+index).css({"background-image": "url(images/"+value+")" });
 			document.getElementById("minPic"+index).onclick = function(){
     			openModal(index);
 				}
+			if(index === 2){
+				$("#minPic2").addClass("offset-s3");
+			}
 		} else if(projectData.id == "lvlDesign"){
-			$("#project-panel").append("<a id=\"minPic"+index+"\" class=\"lvlDesign hoverable animated fadeInLeft waves-effect waves-light modal-trigger\" href=\"#modal"+index+"\"> <img class=\"hoverable responsive-img z-depth-1\" src=\"images/"+value +"\"></a>");	
+			$("#project-panel").append("<a id=\"minPic"+index+"\" class=\"col s6 animated fadeInLeft waves-effect waves-light modal-trigger\" href=\"#modal"+index+"\"> <img class=\"hoverable responsive-img z-depth-1\" src=\"images/"+value +"\"></a>");	
 			$(".panel1").append("<div id=\"modal"+index+"\" class=\"modal\"><div id=\"modalImg"+index+"\" class=\"imgContainer\"></div></div>")
 			$("#modalImg"+index).css({"background-image": "url(images/"+value+")" });
 			document.getElementById("minPic"+index).onclick = function(){
@@ -104,7 +107,7 @@ $(function() {
 		},
 		afterRender:function() {
 			//Start of navbar
-			var pagination = "<div class=\"navbar-fixed\"> <nav> <div class=\"nav-wrapper\"> <a href=\"#home\" class=\"brand-logo\">J.R. Dev</a> <a href=\"#\" data-activates=\"mobile-menu\" class=\"button-collapse\"><i class=\"material-icons\">menu</i></a><ul class=\"right hide-on-med-and-down page\">";
+			var pagination = "<div class=\"navbar-fixed\"> <nav> <div class=\"nav-wrapper\"> <a href=\"#home\" class=\"truncate brand-logo\">Joshua Resnick Dev</a> <a href=\"#\" data-activates=\"mobile-menu\" class=\"button-collapse\"><i class=\"material-icons\">menu</i></a><ul class=\"right hide-on-med-and-down page\">";
 			var sideNav = "<ul class=\"side-nav\" id=\"mobile-menu\">";
 			var activeClass = "";
 

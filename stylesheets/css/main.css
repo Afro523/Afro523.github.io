@@ -1602,7 +1602,7 @@
 
 @font-face {
   font-family: "No Man Sky";
-  src: url(../fonts/geonms-webfont.ttf) format("truetype"); }
+  src: url(../../../fonts/geonms-webfont.ttf) format("truetype"); }
 
 body {
   background-color: #e0e0e0;
@@ -1631,13 +1631,11 @@ h2 {
 
 h3 {
   font-family: "No Man Sky";
-  font-weight: bold;
-  margin: 10px 0 10px 0; }
+  font-weight: bold; }
 
 h4 {
   font-family: "No Man Sky";
-  font-weight: bold;
-  margin: 5px 0 5px 0; }
+  font-weight: bold; }
 
 h5 {
   font-family: "No Man Sky";
@@ -1657,19 +1655,20 @@ h5 {
   z-index: 10;
   position: relative; }
 
+.col .s6 {
+  padding: 10px; }
+
+.myContainer {
+  height: 100%; }
+
 .landingPictures {
   height: 45%; }
 
-#project-panel {
-  float: left;
-  width: 70%;
+#projectContainer {
+  padding-top: 10px;
+  border-right: 5px inset black;
   height: 100%;
-  margin-top: 10px;
-  padding-bottom: 30px;
-  display: inline-flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: space-around; }
+  max-height: 100%; }
 
 .imgContainer {
   height: 100%;
@@ -1684,12 +1683,6 @@ h5 {
   top: 0px !important;
   background-color: transparent;
   box-shadow: none; }
-
-#info-panel {
-  float: right;
-  border-left: 5px solid black;
-  width: 30%;
-  height: 100%; }
 
 #project-menu {
   padding-bottom: 10px;
