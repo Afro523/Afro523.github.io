@@ -14,7 +14,7 @@ body{
 
 .navbar-fixed{
 	font-family: "No Man Sky";
-	font-weight: bold;
+
 }
 
 ul li {
@@ -58,7 +58,6 @@ h5{
 	font-weight: bold;
 }
 
-
 /////
 /////	Home Panel
 /////
@@ -85,6 +84,7 @@ h5{
 /////
 .col .s6{
 	padding: 10px;
+
 }
 .myContainer{
 	height: 100%;
@@ -157,8 +157,8 @@ h5{
 /////
 /////	About Panel
 /////
-.profilePic{
-	width: 25% !important;
+#profilePic{
+	max-height: 50%;
 }
 
 /////

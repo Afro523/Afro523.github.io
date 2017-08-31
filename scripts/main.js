@@ -41,7 +41,7 @@ var projectData = [
 
 //Project Data Loading
 $( "#project-menu > div" ).click( function(){selectProject(this)});
-$( "#project-panel > div > img" ).click( function(){selectProject(this)});
+$( "#project-panel > img" ).click( function(){selectProject(this)});
 function selectProject(obj) {
 	//reference projectData
 	var projectData =  getProjectData(obj.id);
@@ -86,6 +86,10 @@ function selectProject(obj) {
 			document.getElementById("minPic"+index).onclick = function(){
     			openModal(index);
 				}
+			if(index === 1 || index === 3){
+				$("#minPic"+index).wrap("<div class=\"row\">");
+				
+			}
 		} else {
 			console.log("error in data loading");
 		}

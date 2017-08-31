@@ -15,11 +15,10 @@
       </script>
 		<meta name="description" content="A Personal Portfolio Site">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
-		<link href="minified/stars-min.css" media="screen, projection" rel="stylesheet" type="text/css" />
-    	<link rel="stylesheet" href="minified/materialize-min.css">
-		<link href="minified/animate-min.css" media="screen, projection" rel="stylesheet" type="text/css" />
-    	<link href="minified/main-min.css" media="screen, projection" rel="stylesheet" type="text/css" />
-    	
+		<link href="minified/stars.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    	<link rel="stylesheet" href="minified/materialize.css">
+		<link href="minified/animate.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    	<link href="minified/main.css" media="screen, projection" rel="stylesheet" type="text/css" />
     	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	</head>
 	<body>
@@ -40,47 +39,44 @@
 		<section class="panel panel1" data-section-name="projects">
 			<div class="myContainer row">
 				<div id="projectContainer" class="col s8">	
-					<div id="project-panel" class="row">
+					<div id="project-panel" class="center-align row">
+						<h4>Click an image or a button on the right to see more</h4>
 						<img id="minApp" class="col s4 hoverable" src="images/minID1.png">
-						
-						<img id="godp" class=" col s7 hoverable" src="images/godpHome.png">	
-						
+						<img id="godp" class=" col s7 hoverable" src="images/godpHome.png">							
 						<img id="lvlDesign" class="col s7 hoverable" src="images/FirstLevel01.png">
 					</div>
 					
 				</div>
 				<div class="col s4">
 					<div id="info-panel">
-				<div id="project-menu">
-					<h4>Projects</h4>
-					<div id="minApp" class="waves-effect waves-light btn projectBtn" >Pocket Mineral Guide</div>
-					<div id="godp" class="waves-effect waves-light btn projectBtn">Graduate Outcome Data Processing</div>
-					<div id="lvlDesign" class ="waves-effect waves-light btn projectBtn">Level Design</div>
-				</div>
-				<div id="skills">
-					<h4>Skills</h4>
-					<div id="skillsContainer">
-						<div class="chip">Click a project</div>
-					</div>
-				</div>
-				<h4>Description</h4>
-				<div id="project-description">
-					<div class="chip">To find out more</div>
-				</div>
-      		</div>		
-				</div>
-
-				
+						<div id="project-menu">
+							<h4>Projects</h4>
+							<div id="minApp" class="waves-effect waves-light btn projectBtn" >Pocket Mineral Guide</div>
+							<div id="godp" class="waves-effect waves-light btn projectBtn">Graduate Outcome Data Processing</div>
+							<div id="lvlDesign" class ="waves-effect waves-light btn projectBtn">Level Design</div>
+						</div>
+						<div id="skills">
+							<h4>Skills</h4>
+							<div id="skillsContainer">
+								<div class="chip">Click a project</div>
+							</div>
+						</div>
+						<h4>Description</h4>
+						<div id="project-description">
+							<div class="chip">To find out more</div>
+						</div>
+      				</div>		
+				</div>			
 			</div>
       		
 		</section>
 
 		<section class="panel panel2" data-section-name="about">
-			<div class="container">
+			<div>
 
-				<div class="col s12 center-align"><img class="profilePic circle responsive-img" src="images/ProfilePic.jpg"></div>
+				<div class="col s12 center-align"><img id="profilePic" class="responsive-img circle" src="images/ProfilePic.jpg"></div>
 				<div class="row center-align">
-					<div class="col s3">
+					<div class="col s4">
 						<h3>Summary</h3>
 						<div>
 							Hi my name is Joshua Resnick and I am a developer who loves building apps and websites. I have been developing for a few years now and have loved every second of it.  To me the most important part of any website or app is making sure that the user has a pixel perfect layout and the smoothest of interactions.
@@ -93,9 +89,9 @@
 							<h4>B.S. <br/> Environmental Sciences and Mathematics</h4>
 						</div>
 					</div>
-					<div class="col s5">
+					<div class="col s4">
 						<h3>Skills</h3>
-						<div class="container">
+
 							<h5>Languages</h5>
 							<div class="chip">Javascript (ES6)</div>
 							<div class="chip">Java</div>
@@ -115,7 +111,7 @@
 							<div class="chip">PHP</div>
 							<div class="chip">MySql</div>
 							<div class="chip">MongoDB</div>
-						</div>
+
 					</div>
 				</div>
 			</div>
@@ -143,10 +139,10 @@
 
 
     <!-- Script Imports-->
-		<script type="text/javascript" src="minified/jquery-2.1.1-min.js"></script>
-		<script type="text/javascript" src="minified/jquery.scrollify-min.js"></script>
+		<script type="text/javascript" src="minified/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="minified/jquery.scrollify.min.js"></script>
 		<script type="text/javascript" src="minified/materialize.min.js"></script>
-		<script type="text/javascript" src="minified/main-min.js"></script>
+		<script type="text/javascript" src="minified/main.js"></script>
 		<script type="text/javascript">
 			$( document ).ready(function(){
 				$(".modal").modal();
