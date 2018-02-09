@@ -10,6 +10,7 @@ $maincolor: color("grey", lighten-2);
 body{
 	background-color: $maincolor;
 	overflow-y: hidden;
+	cursor: default;
 }
 
 .navbar-fixed{
@@ -158,7 +159,7 @@ h5{
 /////	About Panel
 /////
 #profilePic{
-	max-height: 50%;
+	max-width: 50%;
 }
 
 /////
