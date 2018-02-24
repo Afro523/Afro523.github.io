@@ -63,6 +63,11 @@ h5{
 	font-weight: bold;
 }
 
+.clickable{
+	cursor:pointer;
+	border-radius: 4px;
+}
+
 /////
 /////	Home Panel
 /////
@@ -107,11 +112,27 @@ h5{
 
 }
 
+#minPic0{
+	padding-bottom:15px;
+}
+
+#minPic1{
+	padding-bottom:15px;
+}
+
+#minPic2{
+	padding-bottom:15px;
+}
+
 .imgContainer{
 	height:100%;
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
+}
+
+.hoverable{
+	padding: 0px !important;
 }
 
 .modal{
@@ -120,7 +141,6 @@ h5{
 	overflow-y: hidden;
 	top: 0px !important;
 	background-color: transparent;
-
 	box-shadow: none;
 }
 
@@ -140,8 +160,9 @@ h5{
 .projectBtn{
 	margin: 5px;
 	background-color: $ctaColor;
-	color:black;
+	color:white;
 	font-weight: bold;
+	border-radius: 4px;
 }
 
 .projectBtn:hover{
@@ -176,7 +197,7 @@ h5{
 .chip{
 	font-weight: bold;
 	background-color: $tertiaryColor;
-	color:black;
+	color:white;
 	-webkit-box-shadow: 3px 3px 0px 0px rgba(179,179,179,1);
 	-moz-box-shadow: 3px 3px 0px 0px rgba(179,179,179,1);
 	box-shadow: 3px 3px 0px 0px rgba(179,179,179,1);
