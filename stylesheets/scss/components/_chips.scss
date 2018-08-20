@@ -1,15 +1,9 @@
 .chip {
-  &:focus {
-    outline: none;
-    background-color: $chip-selected-color;
-    color: #fff;
-  }
-
   display: inline-block;
   height: 32px;
   font-size: 13px;
   font-weight: 500;
-  color: rgba(0,0,0,.6);
+  color: white;
   line-height: 32px;
   padding: 0 12px;
   border-radius: 16px;
@@ -50,6 +44,11 @@
 
   &:hover {
     cursor: text;
+  }
+
+  .chip.selected {
+    background-color: $chip-selected-color;
+    color: #fff;
   }
 
   .input {

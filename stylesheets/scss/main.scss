@@ -1,203 +1,281 @@
-$bgcMain: rgba(0,0,0,0.1);
-$primary: #4a148c;
-$secondary: #c6067b;
-$tertiary: #180066;
+@import "components/_color";
 
 @font-face{
 	font-family: "No Man Sky";
 	src: url(../../../fonts/geonms-webfont.ttf) format("truetype");
 }
 
+$backgroundColor: color("grey", lighten-2);
+$ctaColor: color("deep-purple", accent-3);
+$ctaHover: color("deep-purple", accent-1);
+$tertiaryColor: purple;
+
 body{
-	background-color:$bgcMain;
-	width:100%;
-}
-
-section{
-	height: 100vh;
-}
-
-p{
-	border: 1px $secondary solid;
-	background-color: $bgcMain;
-	margin: 5px;
-	border-radius: 4px;
-	overflow: visible;
-}
-
-// .container{
-// 	max-width: 90%;
-// 	width: 100%;
-// 	margin:0px !important;
-// }
-
-.nav-wrapper{
-	position: fixed;
-	background-color: $primary;
-}
-
-nav .sidenav-trigger {
-	height: 40px;
-}
-
-nav .sidenav-trigger i {
-	height: 40px;
-	line-height: 40px;
+	background-color: $backgroundColor;
+	overflow-y: hidden;
+	cursor: default;
 }
 
 .navbar-fixed{
-	height:40px;
-}
-.navbar-fixed nav {
-	height:40px;
+	font-family: "No Man Sky";
+
 }
 
-#nav{
-	height: 40px;
+ul li {
+	&.active{
+		a{
+			color: $ctaHover;
+			font-weight: bold;
+		}
+	}
 }
 
-#nav li{
-	height: 40px;
-}
-
-
-#nav li a{
-	height: 40px;
-	line-height: 40px;
-}
-
-//SideNav Styles
-.sidenav{
-	background-color:rgba(74,20,140,0.8);
-	width: 200px;
-}
-
-.sidenav li{
-	text-align: center;
-}
-
-.sidenav li a{
+h1{
+	font-family: "No Man Sky";
+	font-weight: bold;
+	position:relative;
+	z-index: 10;
 	color:white;
 }
 
-#particles-js canvas{
-	z-index: 0;
-}
-
-h1, h3, h4{
+h2{
 	font-family: "No Man Sky";
 	font-weight: bold;
-	color: $tertiary;
+	position:relative;
+	z-index: 10;
+	color:white;
 }
 
-h1 div{
-	display: inline-block;
-}
-
-h3 div{
-	display: inline-block;
-}
-
-.btn{
-	height: auto;
-	background-color: $secondary;
-	// color: #fe9600;
+h3{
+	font-family: "No Man Sky";
 	font-weight: bold;
+
+}
+
+h4{
+	font-family: "No Man Sky";
+	font-weight: bold;
+
+}
+
+h5{
+	font-family: "No Man Sky";
+	font-weight: bold;
+}
+
+.clickable{
+	cursor:pointer;
 	border-radius: 4px;
-	display: inline-flex;
-	vertical-align: middle;
 }
 
-.divider{
-	width:100%;
-	border-top:1px $tertiary solid;
-	height: 1px;
-	margin-bottom:15px;
+/////
+/////	Home Panel
+/////
+
+.home-panel{
+	display:flex;
+	justify-content: center;
+	align-content:center;
+	padding-top: 15%;
+	text-align: center;
 }
 
-// projects
+.titleDivider{
+	height: 5px;
+	border-radius: 5px;
+	background-color:white !important;
+	z-index: 10;
+	position: relative;
+}
+
+
+/////
+/////	Project Panel
+/////
+.col .s6{
+	padding: 10px;
+
+}
+.myContainer{
+	height: 100%;
+}
+
+.landingPictures{
+	height:45%;
+}
+
+#projectContainer{
+	padding-top: 10px;
+	border-right: 5px inset black;
+	height: 100%;
+	max-height: 100%;
+
+}
+
+#minPic0{
+	padding-bottom:15px;
+}
+
+#minPic1{
+	padding-bottom:15px;
+}
+
+#minPic2{
+	padding-bottom:15px;
+}
+
+.imgContainer{
+	height:100%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+.hoverable{
+	padding: 0px !important;
+}
+
+.modal{
+	height: 100%;
+	max-height: 100%;
+	overflow-y: hidden;
+	top: 0px !important;
+	background-color: transparent;
+	box-shadow: none;
+}
+
+#project-menu{
+	padding-bottom: 10px;
+	display:flex;
+	flex-direction:column;
+	flex-wrap:wrap;
+}
+
+#project-description{
+	p{
+		margin: 5px;
+	}
+}
+
 .projectBtn{
-	margin-bottom: 15px;
-	margin-right: 15px;
-}
-
-#mobileDropdown{
-	margin-left:25%;
-}
-
-.projectImg{
-	max-height: 400px;
-}
-
-#project{
-	opacity: 0;
-}
-
-.dropdown-trigger{
-	margin-bottom:15px;
-}
-
-.skillContainer{
-	border: 1px $secondary solid;
-	background-color: $bgcMain;
 	margin: 5px;
+	background-color: $ctaColor;
+	color:white;
 	font-weight: bold;
 	border-radius: 4px;
-	text-align: center;
-	overflow: visible;
-}
-#desc{
-	border: 1px $secondary solid;
-	border-radius: 4px;
-	background: $bgcMain;
 }
 
-#projectDropdown li {
-	text-align: center;
+.projectBtn:hover{
+	background-color: $ctaHover;
 }
 
-// About
-
-#about{
-	padding-top: 20px;
+#skills{
+	border-top: 2px solid black;
 }
 
-#aboutImg{
-	border-radius: 50%; 
-	// max-height: 220px;
+.minApp{
+	max-width: 30% !important;
 }
 
-#aboutSkillsContainer{
-	display: flex;
+.godp{
+	max-height: 34% !important;
+	max-width: 45%;
+}
+
+.lvlDesign{
+	max-height: 35% !important;
+	max-width: 45%;
+}
+
+/////
+/////	About Panel
+/////
+#profilePic{
+	max-width: 50%;
+}
+
+.chip{
+	font-weight: bold;
+	background-color: $tertiaryColor;
+	color:white;
+	-webkit-box-shadow: 3px 3px 0px 0px rgba(179,179,179,1);
+	-moz-box-shadow: 3px 3px 0px 0px rgba(179,179,179,1);
+	box-shadow: 3px 3px 0px 0px rgba(179,179,179,1);
+}
+
+/////
+/////	Contact Panel
+/////
+
+#contactDiv{
+	display:flex;
+	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
-	align-content: center;
+	align-items: center;
 }
 
-.aboutSkills{
-	border: 1px $secondary solid;
-	border-radius: 4px;
-	text-align: center;
-	background-color: $bgcMain;
-	margin:10px;
-	width:25%;
-	font-size: 1.1rem;
-	font-weight: 500;
-	padding: 5px 0px 5px 0px ;
+.contactBtn{
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.contactImg{
+	height:60px;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.15);
 }
 
-//Contact
-#contact{
-	padding-top:30px;
+.contactImg::after{
+	box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  	opacity: 0;
+  	transition: opacity 0.3s ease-in-out;
 }
 
-@media screen and (max-width: 600px) {
-	.aboutSkills{
-		width:75%;
-		margin-top:2px;
+.contactImg:hover::after {
+  opacity: 1;
+}
+
+.contactHeader{
+	margin-top: 0px;
+	padding-top: 15%;
+}
+
+.contactDivider{
+	height:5px;
+	border-radius: 10px;
+	background-color: color("grey", darken-4);
+	margin: 10px;
+	margin-right: 25%;
+	margin-left: 25%;
+}
+
+
+@media only screen and (max-width: 1600px) {
+    .lvlDesign{
+		max-height: 30% !important;
+	}
+	.minApp{
+		max-height: 100% !important;
+	}
+}
+
+@media only screen and (max-width: 1100px) {
+    .lvlDesign{
+		max-height: 25% !important;
+	}
+	.minApp{
+		max-height: 100% !important;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+    .lvlDesign{
+		max-height: 20% !important;
 	}
 
-	#picture{
-		padding:0px;
+}
+
+@media only screen and (max-width: 700px) {
+    .lvlDesign{
+		max-height: 17% !important;
 	}
- }
+}
