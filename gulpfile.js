@@ -12,11 +12,11 @@ gulp.task('sass', function() {
         .pipe(sass())
         .pipe(minifyCss())
         .pipe(gulp.dest('./minified'))
-        .pipe(browserSync.stream());
+        .pipe(browserSync.reload({stream: true}))
     gulp.src(['stylesheets/css/*.css'])
         .pipe(minifyCss())
         .pipe(gulp.dest('./minified'))
-        .pipe(browserSync.stream());
+        .pipe(browserSync.reload({stream: true}))
 });
 
 gulp.task('js', function() {
@@ -24,7 +24,8 @@ gulp.task('js', function() {
           .pipe(gulp.dest('./minified'))
           .pipe(rename({suffix:'.min'}))
           .pipe(uglify())
-          .pipe(gulp.dest('./minified'));
+          .pipe(gulp.dest('./minified'))
+          .pipe(browserSync.reload({stream: true}));
         });
 
 gulp.task('default', function(){
@@ -36,4 +37,4 @@ gulp.task('default', function(){
     gulp.watch("stylesheets/scss/*.scss", ['sass']);
     gulp.watch("scripts/*.js", ['js']);
     gulp.watch("*.html").on('change', browserSync.reload);
-});
+})
