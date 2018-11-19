@@ -156,6 +156,19 @@ h3 div{
 	text-align: center;
 }
 
+.download-icon{
+	margin-top: 5px;
+	height: 40px;
+	width: 130px;
+}
+
+@media screen and (max-width: 600px) {
+	.download-icon{
+		height: 32px;
+		width: 110px;
+	}	
+}
+
 // About
 
 #about{

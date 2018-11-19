@@ -189,6 +189,11 @@ function getProject(el){
 				$.each(dataset.description, function(index, value){
 					$("#desc").append("<div>"+value+"</div>")
 				})
+				if(dataset.id === "minApp"){
+					$("#desc").append("<div id=\"badge-container\" class=\"col s12 center-align\"></div>")
+					$("#badge-container").append("<a href=\"https://play.google.com/store/apps/details?id=com.meteor.josh.mineral&hl=en_US\" target=\"_blank\"><img class=\"download-icon\" src=\"images/google-badge.png\"></a>")
+					$("#badge-container").append("<a href=\"https://itunes.apple.com/us/app/pocket-mineral-guide/id1266022397?ls=1&mt=8\" target=\"_blank\"><img class=\"download-icon\" src=\"images/apple-download.svg\"></a>")
+				}
 				$.each(dataset.skills, function(index, value){
 					$("#skills").append("<div class=\"col s12 skillContainer\">"+value+"</div>")
 				})
@@ -227,11 +232,15 @@ function getProject(el){
 		} else if(el.id === "site" || el.id === "dropDown_site"){
 			dataset = projectData[3];
 		}
-		console.log(dataset)
 		$("#picture").append("<img class=\"responsive-img projectImg\" src=\"images\/"+dataset.images[1]+"\"></img>")
 		$.each(dataset.description, function(index, value){
 			$("#desc").append("<div>"+value+"</div>")
 		})
+		if(dataset.id === "minApp"){
+			$("#desc").append("<div id=\"badge-container\" class=\"col s12 center-align\"></div>")
+			$("#badge-container").append("<a href=\"https://play.google.com/store/apps/details?id=com.meteor.josh.mineral&hl=en_US\" target=\"_blank\"><img class=\"download-icon\" src=\"images/google-badge.png\"></a>")
+			$("#badge-container").append("<a href=\"https://itunes.apple.com/us/app/pocket-mineral-guide/id1266022397?ls=1&mt=8\" target=\"_blank\"><img class=\"download-icon\" src=\"images/apple-download.svg\"></a>")
+		}
 		$.each(dataset.skills, function(index, value){
 			$("#skills").append("<div class=\"col s12 skillContainer\">"+value+"</div>")
 		})
@@ -243,7 +252,6 @@ function getProject(el){
 			opacity: 1,
 		}, 500);
 	}
-	// firstRun = false;
 }
 
 function clearTl(){
@@ -283,11 +291,6 @@ $.each(projectData, function(index, value){
 
 $.each(projectData, function(index, value){
 	$("#projectDropdown").append("<li><a id=\"dropDown_"+value.id+"\" onclick=\"getProject(this)\">"+value.title+"</a></li>")
-	if (smallScreen) {
-		// $("#dropDown_"+value.id).click(function() {
-		// 	getProject(this);
-		// });
-	}
 });
 
 $.each(skills, function(index, value){
